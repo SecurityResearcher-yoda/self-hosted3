@@ -2,7 +2,6 @@ name: CI Workflow
 
 on:
   pull_request:
-  push:
     branches:
       - tmp/202*
 permissions: write-all
