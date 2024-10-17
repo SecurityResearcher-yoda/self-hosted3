@@ -20,7 +20,7 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: echo "something"
+        run: echo "something1"
         # Simulating a scheduled cron workflow or  a workflow with secrets run by a user by triggering this run
 
       - name: Run tests
