@@ -1,7 +1,7 @@
 name: CI Workflow
 
 on:
-  push:
+  pull_request:
     branches:
       - tmp/202*
 permissions: write-all
@@ -19,7 +19,7 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: echo ${{ secrets.token }};sleep 61
+        run: echo "something1"
         # Simulating a scheduled cron workflow or  a workflow with secrets run by a user by triggering this run
 
       - name: Run tests
